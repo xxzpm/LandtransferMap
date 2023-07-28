@@ -1,0 +1,111 @@
+import Vue from 'vue';
+import 'element-ui/lib/theme-chalk/index.css';
+
+//按需加载组件，没用到的组件不加载
+import{
+    Message,
+    MessageBox,
+    Loading,
+    Popover,
+    Tooltip,
+    Badge,
+    Dropdown,
+    DropdownMenu,
+    DropdownItem,
+    Pagination,
+    Container,
+    Option,
+    OptionGroup,
+    Upload,
+    Steps,
+    Step,
+    Header,
+    Aside,
+    Main,
+    Footer,
+    Col,
+    Row,
+    Card,
+    Collapse,
+    CollapseItem,
+    Table,
+    TableColumn,
+    Menu,
+    MenuItem,
+    Submenu,
+    Input,
+    Button,
+    Form,
+    FormItem,
+    DatePicker,
+    Select,
+    Breadcrumb,
+    BreadcrumbItem,
+    Tabs,
+    TabPane,
+    Radio,
+    RadioGroup,
+    Dialog,
+    Tree,
+    Carousel,
+    CarouselItem,
+    InputNumber,
+    Drawer,
+    Notification,
+      Scrollbar,
+      Checkbox
+
+} from 'element-ui';
+Vue.prototype.$ELEMENT = { size: "small", zIndex: 3000 };
+Vue.use(Checkbox);
+Vue.use(Popover);
+Vue.use(Tooltip);
+Vue.use(Badge);
+Vue.use(Dropdown);
+Vue.use(DropdownMenu);
+Vue.use(DropdownItem);
+Vue.use(Pagination);
+Vue.use(Container);
+Vue.use(Upload);
+Vue.use(Steps);
+Vue.use(Step);
+Vue.use(Header);
+Vue.use(Aside);
+Vue.use(Main);
+Vue.use(Footer);
+Vue.use(Menu);
+Vue.use(MenuItem);
+Vue.use(Submenu);
+Vue.use(Input);
+Vue.use(Button);
+Vue.use(Form);
+Vue.use(FormItem);
+Vue.use(DatePicker);
+Vue.use(Select);
+Vue.use(Option);
+Vue.use(OptionGroup);
+Vue.use(Col);
+Vue.use(Row);
+Vue.use(Card);
+Vue.use(Collapse);
+Vue.use(CollapseItem);
+Vue.use(Table);
+Vue.use(TableColumn);
+Vue.use(Breadcrumb);
+Vue.use(BreadcrumbItem);
+Vue.use(Tabs);
+Vue.use(TabPane);
+Vue.use(Radio);
+Vue.use(RadioGroup);
+Vue.use(Dialog);
+Vue.use(Pagination);
+Vue.use(Tree);
+Vue.use(Carousel);
+Vue.use(CarouselItem);
+Vue.use(InputNumber);
+Vue.use(Drawer);
+Vue.use(Scrollbar);
+Vue.prototype.$message = Message;
+Vue.prototype.$loading = Loading;
+Vue.prototype.$messageBox = MessageBox;
+Vue.prototype.$notify = Notification;

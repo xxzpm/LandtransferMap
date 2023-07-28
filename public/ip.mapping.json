@@ -1,0 +1,45 @@
+{
+    "data": [
+      {
+        "key": "<ahzh-resource-services>",
+        "value": {
+          "host": "http://localhost:8080",
+          "another": "/ahzh/gis"
+        },
+        "type": 1
+      },
+      {
+        "key": "<ahzh-websocket-services>",
+        "value": {
+          "host": "192.168.63.29:8788",
+          "another": "/ahzh/gis"
+        },
+        "type": 1
+      },
+      {
+        "key": "<ahzh-resource-services-prod>",
+        "value": {
+          "host": "http://localhost:8082",
+          "another": "/ahzh/gis"
+        },
+        "type": 1
+      },
+      {
+        "key": "<ahzh-websocket-services-prod>",
+        "value": {
+          "host": "58.210.9.131:5088",
+          "another": ""
+        },
+        "type": 1
+      }
+    ],
+    "desc": {
+      "key": "要映射的ip地址",
+      "value": {
+        "host": "ip地址",
+        "another": "上下文根及其它信息"
+      },
+      "type": "映射类型,0表示不映射,1表示完全使用value中的信息"
+    }
+  }
+  

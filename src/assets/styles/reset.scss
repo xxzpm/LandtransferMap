@@ -1,0 +1,144 @@
+@charset 'UTF-8';
+
+html {
+  @include size;
+}
+
+body,
+#app {
+  @include size;
+  background: transparent;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#app {
+  position: relative;
+  overflow: auto;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+details,
+summary {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  :focus {
+    outline: none;
+  }
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+p,
+dl,
+dd,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+/* --------------------------------------------
+                * 初始化滚动条样式 *
+---------------------------------------------*/
+
+/*滚动条整体部分,必须要设置*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 2px;
+  padding-left: 5px;
+}
+
+/*滚动条的轨道*/
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+/*滚动条的滑块按钮*/
+::-webkit-scrollbar-thumb {
+  width: 1px;
+  border-radius: 50px;
+  box-shadow: 8px 0 0 #d9e5f4 inset;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 8px 0 0 #d9e5f4 inset;
+}
+
+/*滚动条的上下两端的按钮*/
+::-webkit-scrollbar-button {
+  height: 0px;
+  background-color: #fff;
+}
+
+.loading {
+  @include size;
+  @include flex(row, center, center);
+  background: linear-gradient(180deg, #303750 0%, #131930);
+
+  > .iconfont {
+    color: #40a3ff;
+    font-size: 36px;
+    animation: rotateTurn 2.6s linear infinite;
+  }
+
+  @keyframes rotateTurn {
+    to {
+      transform: rotate(1turn);
+      transform-origin: center center;
+    }
+  }
+}
+
+.word-mark {
+  @include absolute($right: 0, $top: 0);
+  @include ellipsis;
+  line-height: 0.32rem;
+  background: #2884ff;
+  padding: 0 2em;
+  color: #fff;
+  transform-origin: left bottom;
+  transform: translate(29.29%, -100%) rotate(45deg);
+  text-indent: 0;
+  font-size: 0.12rem;
+}
+
+:root {
+  --text-color: rgba(255, 255, 255, 0.8);
+  --text-color-2: #fff;
+  --text-color-3: rgba(255, 255, 255, 0.4);
+  --background-color: #22242b;
+  --background-color-2: #2d2f38;
+  --background-color-3: rgb(24, 27, 36);
+  --background-color-4: rgba(37, 137, 255, 1);
+  --border-color: #000;
+  --background-gradient: linear-gradient(
+    141deg,
+    rgba(82, 126, 195, 1) 0%,
+    rgba(81, 125, 194, 1) 0%,
+    rgba(96, 91, 143, 1) 31%,
+    rgba(24, 58, 130, 1) 68%,
+    rgba(15, 34, 90, 1) 100%,
+    rgba(19, 53, 126, 1) 100%
+  );
+}
